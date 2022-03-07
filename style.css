@@ -14,28 +14,17 @@ h6 {
     font-size: 100%;
 }
 
-button {
-    background: none;
-    border: 1px solid #999;
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-size: 18px;
-    box-shadow: 0 0 3px #000;
-    transition: 0.1s;
-}
 
-button:active {
-    background: dodgerblue;
-    color: #fff;
-    transform: translateY(3px);
-    box-shadow: none;
-}
+
 
 body {
     height: 100vh;
-
     text-align: center;
-    background: rgb(238, 255, 210);
+    /* background: rgb(238, 238, 238); */
+    background-image: url('/lotto_img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #result {
@@ -86,14 +75,40 @@ h1 {
     padding-bottom: 20px;
     margin-bottom: 10px;
     font-size: 20px;
-    background: rgb(157, 228, 163);
+    /* background: rgba(226, 226, 226, 0.514); */
+    border-bottom: 1px solid #666;
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 20px;
 }
 
 #btn_wrap {
     margin-top: 10px;
+    display: flex;
+}
+
+#btn_wrap button {
+    flex: 1 0 auto;
+    background: none;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 20px 0;
+    margin: 0 5px;
+    font-size: 18px;
+    box-shadow: 0 0 3px #000;
+    transition: 0.1s;
+    background: rgba(255, 255, 255, 0.548);
+}
+
+#btn_wrap button:active {
+    background: dodgerblue;
+    color: #fff;
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+.history {
+    margin-top: 20px;
 }
