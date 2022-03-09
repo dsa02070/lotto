@@ -88,9 +88,7 @@ reloadBtn.addEventListener('click', function () {
   }
 })
 
-let history = document.querySelector('.history li')
-const $ball2 = document.createElement('div');
-let a = history.append($ball2)
+
 // 저장 버튼
 saveBtn.addEventListener('click', function () {
   // if ($bonus.childElementCount >= 1) {
@@ -98,20 +96,34 @@ saveBtn.addEventListener('click', function () {
   //     showBall(winballs[i], history)
   //   }
   // }
-  sessionStorage.setItem("key", JSON.stringify(winballs));
-
+  if ($bonus.childElementCount >= 1) {
+    sessionStorage.setItem("key", JSON.stringify(winballs))
+    const winballsJson = JSON.stringify(winballs)
+    console.log(winballsJson);
+  } else {
+    alert('번호를 먼저 생성해주세요.')
+  }
 })
 
+let history = document.querySelector('.history li')
 let printBtn = document.getElementById('print');
-
+// 출력 버튼
 printBtn.addEventListener('click', function () {
+
   var output = sessionStorage.getItem("key");
   var arr = JSON.parse(output);
-  console.log(arr) // [1,2,3,4,5]
-
+  console.log(arr)
 
   for (let i = 0; i < 6; i++) {
     showBall(arr[i], history)
   }
-
+  const $ball2 = document.createElement('br');
+  history.append($ball2)
 })
+
+function jsonNumber() {
+  fetch("./number.json")
+    .then((response) => response.json())
+    .then((json) => console.log(json[0].result));
+}
+jsonNumber()

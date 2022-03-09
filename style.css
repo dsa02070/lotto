@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'LeeSeoyun';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +25,8 @@ h6 {
 
 
 body {
+    font-family: 'LeeSeoyun';
+    font-weight: 300;
     height: 100vh;
     text-align: center;
     /* background: rgb(238, 238, 238); */
@@ -52,7 +61,7 @@ body {
     width: 40px;
     height: 40px;
     line-height: 40px;
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     margin: 0 5px;
     animation: ss 1s;
@@ -74,29 +83,32 @@ h1 {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 30px;
     /* background: rgba(226, 226, 226, 0.514); */
     border-bottom: 1px solid #666;
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 22px;
     margin-top: 20px;
 }
 
 #btn_wrap {
     margin-top: 10px;
     display: flex;
+    justify-content: center;
 }
 
 #btn_wrap button {
+    font-family: 'LeeSeoyun';
     flex: 1 0 auto;
+    max-width: 200px;
     background: none;
     border: 1px solid #999;
     border-radius: 5px;
     padding: 20px 0;
     margin: 0 5px;
-    font-size: 18px;
+    font-size: 26px;
     box-shadow: 0 0 3px #000;
     transition: 0.1s;
     background: rgba(255, 255, 255, 0.548);
@@ -111,4 +123,8 @@ h2 {
 
 .history {
     margin-top: 20px;
+}
+
+.history li .ball {
+    margin-bottom: 10px;
 }
