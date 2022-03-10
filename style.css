@@ -137,21 +137,21 @@ h2 {
 
 .store_input {
     font-size: 14px;
-    padding: 5px 5px;
+    padding: 9px 5px;
     margin-bottom: 10px;
     border: 1px solid #999;
     border-radius: 5px;
     vertical-align: top;
-    width: 40%;
+    width: 46%;
 }
 
 .si_store {
     font-size: 14px;
-    padding: 6px 2px;
+    padding: 8px 2px;
     border: 1px solid #999;
     background: #fff;
     border-radius: 5px;
-    width: 25%;
+    width: 22%;
     cursor: pointer;
 }
 
@@ -162,11 +162,11 @@ h2 {
 
 .si_load {
     font-size: 14px;
-    padding: 6px 2px;
+    padding: 8px 2px;
     border: 1px solid #999;
     background: #fff;
     border-radius: 5px;
-    width: 25%;
+    width: 22%;
     cursor: pointer;
 }
 

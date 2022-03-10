@@ -81,11 +81,7 @@ startBtn.addEventListener('click', function (e) {
 
 // 초기화 버튼
 reloadBtn.addEventListener('click', function () {
-  // 만약에 보너스번호 자식태그가 1개일 때
-  if ($bonus.childElementCount >= 1) {
-    childNodeDelete()
-    location.reload();
-  }
+  location.reload();
   sessionStorage.clear()
 })
 // 2022 03 10
@@ -109,13 +105,13 @@ let siLoadBtn04 = document.getElementById('si_load04');
 let siLoadBtn05 = document.getElementById('si_load05');
 
 let a = winballs.join()
-let b = winballs.join(' ')
+let b = winballs.join(', ')
 
 let storeInputValue = storeInput01.value;
 
 // 저장하기 버튼 클릭
 siStoreBtn01.addEventListener('click', function () {
-  storeInput01.setAttribute('value', b + ' ' + bonus)
+  storeInput01.setAttribute('value', b + ', ' + bonus)
   sessionStorage.setItem('01', storeInput01.value)
 })
 siStoreBtn02.addEventListener('click', function () {
