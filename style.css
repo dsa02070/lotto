@@ -30,7 +30,7 @@ body {
     height: 100vh;
     text-align: center;
     /* background: rgb(238, 238, 238); */
-    background-image: url('/lotto_img.jpg');
+    background-image: url('/lotto_im.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -127,4 +127,50 @@ h2 {
 
 .history li .ball {
     margin-bottom: 10px;
+}
+
+/* 2022.03.10. */
+.store_wrap {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.store_input {
+    font-size: 14px;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    vertical-align: top;
+    width: 40%;
+}
+
+.si_store {
+    font-size: 14px;
+    padding: 6px 2px;
+    border: 1px solid #999;
+    background: #fff;
+    border-radius: 5px;
+    width: 25%;
+    cursor: pointer;
+}
+
+.si_store:active {
+    background: dodgerblue;
+    color: #fff;
+}
+
+.si_load {
+    font-size: 14px;
+    padding: 6px 2px;
+    border: 1px solid #999;
+    background: #fff;
+    border-radius: 5px;
+    width: 25%;
+    cursor: pointer;
+}
+
+.si_load:active {
+    background: dodgerblue;
+    color: #fff;
 }
