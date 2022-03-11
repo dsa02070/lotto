@@ -36,6 +36,42 @@ body {
     background-position: center;
 }
 
+.ex_img {
+    position: fixed;
+    left: -100%;
+    box-sizing: border-box;
+    width: 300px;
+    border: 3px solid #333;
+    background: #666;
+    color: #f1f1f1;
+    text-align: left;
+}
+
+.ex_img img {
+    width: 100%;
+}
+
+.ex_img ul {
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.ex_img.on {
+    left: 0;
+}
+
+.ex_btn {
+    position: fixed;
+    top: 84px;
+    right: 10px;
+    cursor: pointer;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 5px 6px;
+    z-index: 500;
+    background: #fff;
+}
+
 #result {
     height: 70px;
     line-height: 70px;
@@ -111,7 +147,12 @@ h2 {
     font-size: 26px;
     box-shadow: 0 0 3px #000;
     transition: 0.1s;
-    background: rgba(255, 255, 255, 0.548);
+    background: rgba(197, 255, 186, 0.548);
+    cursor: pointer;
+}
+
+#btn_wrap #reload {
+    background: rgb(224, 187, 187);
 }
 
 #btn_wrap button:active {
@@ -149,7 +190,7 @@ h2 {
     font-size: 14px;
     padding: 8px 2px;
     border: 1px solid #999;
-    background: #fff;
+    background: rgb(208, 234, 255);
     border-radius: 5px;
     width: 22%;
     cursor: pointer;
@@ -164,7 +205,7 @@ h2 {
     font-size: 14px;
     padding: 8px 2px;
     border: 1px solid #999;
-    background: #fff;
+    background: rgb(235, 230, 171);
     border-radius: 5px;
     width: 22%;
     cursor: pointer;

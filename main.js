@@ -132,6 +132,8 @@ siStoreBtn05.addEventListener('click', function () {
 })
 
 // 불러오기 버튼 클릭
+const stInputElem = document.querySelectorAll('.store_input');
+
 siLoadBtn01.addEventListener('click', function () {
   let se01 = sessionStorage.getItem('01');
   storeInput01.setAttribute('value', se01);
@@ -151,6 +153,27 @@ siLoadBtn04.addEventListener('click', function () {
 siLoadBtn05.addEventListener('click', function () {
   let se05 = sessionStorage.getItem('05');
   storeInput05.setAttribute('value', se05);
+})
+
+// 
+
+// stInputElem.forEach(function (e) {
+//   siStoreBtn01.addEventListener('click', function (ev) {
+//     let inputValue = e.getAttribute('value')
+//     console.log(inputValue)
+//     console.log(e)
+//     console.log(this)
+//     console.log(ev)
+//     if (inputValue != null) {
+//       e.style.backgroundColor = "gray"
+//     }
+//   })
+// })
+
+let exImg = document.querySelector('.ex_img');
+let exBtn = document.querySelector('.ex_btn')
+exBtn.addEventListener('click', function () {
+  exImg.classList.toggle('on')
 })
 
 // 2022 03 10 end
